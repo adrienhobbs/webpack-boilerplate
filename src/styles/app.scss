@@ -1,0 +1,39 @@
+@use lost;
+@import './vendor/_normalize.scss';
+
+body {
+  background-color: black;
+}
+
+.main {
+  max-width: 1320px;
+  width: 100%;
+  margin: auto;
+  display: table;
+}
+
+img {
+  max-width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  display: block;
+}
+
+.desktop {
+  max-width: 90%;
+
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
+
+.mobile {
+  @media(min-width: 601px) {
+    display: none;
+  }
+}
+
+.half {
+  lost-column: 1/2;
+}
